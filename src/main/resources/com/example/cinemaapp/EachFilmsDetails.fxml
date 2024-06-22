@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="eachFilmAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1300.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinemaapp.EachFilmController">
+   <children>
+      <GridPane alignment="TOP_RIGHT" maxHeight="60.0" maxWidth="1300.0" prefHeight="60.0" prefWidth="1300.0" style="-fx-background-color: #252226;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <FlowPane alignment="CENTER_LEFT" maxHeight="200.0" maxWidth="677.0" prefHeight="60.0" prefWidth="677.0" style="-fx-background-color: #252226;">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="217.0" text="All Films" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Medium" size="25.0" />
+                     </font>
+                     <FlowPane.margin>
+                        <Insets left="20.0" />
+                     </FlowPane.margin>
+                  </Label>
+               </children>
+            </FlowPane>
+            <FlowPane fx:id="titleLable" alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="688.0" style="-fx-background-color: #252226;" GridPane.columnIndex="1">
+               <children>
+                  <Label onMouseClicked="#back" text="Back" textFill="WHITE">
+                     <FlowPane.margin>
+                        <Insets right="20.0" />
+                     </FlowPane.margin>
+                     <font>
+                        <Font name="Roboto Medium" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </FlowPane>
+         </children>
+      </GridPane>
+      <ImageView fx:id="filmImage" fitHeight="554.0" fitWidth="390.0" layoutX="79.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/FilmsImage/Transformers.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="filmName" layoutX="550.0" layoutY="106.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="filmDesc" alignment="TOP_LEFT" layoutX="550.0" layoutY="189.0" prefHeight="276.0" prefWidth="483.0" text="Having taken her first steps into the Jedi world, Rey joins Luke Skywalker on an adventure with Leia, Finn and Poe that unlocks mysteries of the Force and secrets of the past." textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="267.0">
+         <font>
+            <Font name="Roboto Medium" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="1124.0" layoutY="628.0" mnemonicParsing="false" onAction="#bookFilm" style="-fx-background-color: white;" text="Book Now" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="44.0">
+         <font>
+            <Font name="Roboto Medium" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="550.0" layoutY="492.0" prefHeight="200.0" prefWidth="170.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="509.0">
+         <children>
+            <Label fx:id="from" layoutX="8.0" layoutY="36.0" text="From: 2018-01-19" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="to" layoutX="36.0" layoutY="86.0" text="To: 2018-01-19" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" layoutY="133.0" text="Times: 2018-01-19" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

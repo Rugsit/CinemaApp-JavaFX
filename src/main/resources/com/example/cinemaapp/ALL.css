@@ -1,0 +1,91 @@
+#rootAnchorPane {
+    -fx-background-image: url(./images/backgroundLoginScene-02.png);
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+#backgroundProfile {
+    -fx-background-image: url(./images/backgroundUserScene-02.png);
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+}
+
+#viewFilmsButton, #viewBookingButton, #uploadButton, #editButton {
+    -fx-text-fill: white;
+    -fx-background-color: #252226;
+    -fx-graphic-text-gap: 10;
+}
+
+#nameLabel,
+#sendEmailLabel,
+#customerLabel, {
+    -fx-line-spacing: 5;
+    -fx-graphic-text-gap: 10;
+}
+
+
+#titleLiable {
+    -fx-background-color: #252226;
+}
+
+#paneSide {
+    -fx-border-width: 0 2 0 0;
+    -fx-border-color: #c4c4c4;
+}
+
+#newNameLabel, #oldNameLabel,
+#newEmailLabel, #oldEmailLabel,
+#newCustomer, #oldCustomer {
+    -fx-graphic-text-gap: 10;
+}
+
+#saveButton {
+    -fx-background-color: #252226;
+    -fx-text-fill: white;
+}
+
+#eachImageFilm {
+    -fx-background-color: black;
+}
+
+#sideBarBook {
+    -fx-border-width: 0 2 0 0;
+    -fx-border-color: #c4c4c4;
+}
+
+.date-picker-popup .calendar-grid {
+    -fx-font-size: 18;
+    -fx-font-family: "Roboto Medium";
+}
+
+.date-picker-popup .spinner-label {
+    -fx-font-size: 18;
+    -fx-font-family: "Roboto Medium";
+}
+
+#tableHistory {
+    -fx-font-size: 20;
+    -fx-font-family: "Roboto Medium";
+}
+
+#cancelBooking {
+    -fx-border-width: 2;
+    -fx-border-color: #252226;
+    -fx-background-color: white;
+}
+
+#cancelBooking:hover {
+    -fx-border-width: 2;
+    -fx-border-color: #252226;
+    -fx-background-color: #252226;
+    -fx-text-fill: white;
+}
+
+.text-area:focused .content {
+    -fx-background-color:  white;
+}
+
