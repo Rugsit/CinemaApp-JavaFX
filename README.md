@@ -1,5 +1,4 @@
-### CinemaApp Project JavaFX
-
+## CinemaApp Project JavaFX
 #### Description:
 
 - This project is created entirely in java language
