@@ -1,5 +1,5 @@
 ## CinemaApp Project JavaFX
-![cinemaimg1](https://github.com/user-attachments/assets/1e30321e-f721-49d4-a631-7399288adb20)![cinemaimg2](https://github.com/user-attachments/assets/73d49381-ab9b-4169-b3a0-555ccf534a1f)
+![cinemaimg1](https://github.com/user-attachments/assets/1e30321e-f721-49d4-a631-7399288adb20)
 ![cinemaimg3](https://github.com/user-attachments/assets/d3329ceb-46ca-4075-babf-5d6e3b813a81)
 
 #### Description:
