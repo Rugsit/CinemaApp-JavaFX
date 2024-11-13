@@ -1,7 +1,5 @@
 package com.example.cinemaapp;
 
-import java.awt.print.Book;
-
 public class BookingData {
     private String status;
     private String firstName;

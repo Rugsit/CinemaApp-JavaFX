@@ -12,15 +12,10 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
-import javax.swing.*;
-import javax.swing.text.html.Option;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.security.Key;
 import java.util.Optional;
 
 public class EditCustomerScene {

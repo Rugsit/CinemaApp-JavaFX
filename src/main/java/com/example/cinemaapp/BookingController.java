@@ -8,7 +8,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
@@ -19,7 +18,6 @@ import org.json.JSONObject;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.swing.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -35,7 +33,7 @@ public class BookingController {
     static String seatStatus;
     static {
         try {
-            seatStatus = new String(Files.readAllBytes((Paths.get("C:/Users/uSeR/IdeaProjects/CinemaApp/src/main/resources/com/example/cinemaapp/SeatStatus.json"))));
+            seatStatus = new String(Files.readAllBytes((Paths.get(System.getProperty("user.dir"), "data", "SeatStatus.json"))));
             if (seatStatus.equals("{}")) {
                 seatStatus = """
                         {"C1":true,"B1":true,"C2":true,"A1":true,"B2":true,"C3":true,"A2":true,"B3":true,"C4":true,"A3":true,"B4":true,"C5":true,"A4":true,"B5":true,"C6":true,"A5":true,"B6":true,"A6":true}
@@ -50,7 +48,7 @@ public class BookingController {
     static String bookingData;
     static {
         try {
-            bookingData = new String(Files.readAllBytes(Paths.get("C:/Users/uSeR/IdeaProjects/CinemaApp/src/main/resources/com/example/cinemaapp/DataBooking.json")));
+            bookingData = new String(Files.readAllBytes((Paths.get(System.getProperty("user.dir"),"data", "DataBooking.json"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -261,7 +259,7 @@ public class BookingController {
 
     static void saveToJsonFile() {
         try {
-            FileWriter fileWriter = new FileWriter("DataBooking.json");
+            FileWriter fileWriter = new FileWriter("data" + File.separator + "DataBooking.json");
             fileWriter.write(bookingData);
             fileWriter.close();
         } catch (IOException e) {
@@ -269,7 +267,7 @@ public class BookingController {
         }
 
         try {
-            FileWriter fileWriter = new FileWriter("SeatStatus.json");
+            FileWriter fileWriter = new FileWriter("data" + File.separator + "SeatStatus.json");
             fileWriter.write(seatStatus);
             fileWriter.close();
         } catch (IOException e) {

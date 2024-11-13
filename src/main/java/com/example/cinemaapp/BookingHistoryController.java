@@ -1,7 +1,5 @@
 package com.example.cinemaapp;
 
-import javafx.beans.Observable;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,7 +15,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.json.JSONObject;
 
-import javax.swing.*;
 import java.io.IOException;
 import java.util.Iterator;
 

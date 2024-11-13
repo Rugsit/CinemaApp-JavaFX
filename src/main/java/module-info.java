@@ -9,6 +9,7 @@ module com.example.cinemaapp {
     requires javax.mail.api;
 
 
-    opens com.example.cinemaapp to javafx.fxml;
+
     exports com.example.cinemaapp;
+    opens com.example.cinemaapp to javafx.fxml;
 }

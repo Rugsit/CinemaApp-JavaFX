@@ -33,7 +33,7 @@ public class ProfileSceneController {
     static String personalDataString;
     static {
         try {
-            personalDataString = new String(Files.readAllBytes((Paths.get("C:/Users/uSeR/IdeaProjects/CinemaApp/src/main/resources/com/example/cinemaapp/PersonalData.json"))));
+            personalDataString = new String(Files.readAllBytes((Paths.get(System.getProperty("user.dir"), "data", "PersonalData.json"))));
             if (personalDataString.equals("{}")) {
                 personalDataString = """
                             {"lastName":"LastName","password":"","mail":"mail@gmail.com","name":"FirstName","urlPicture":"file:/C:/Users/uSeR/IdeaProjects/JavaFX-tutorial/src/main/resources/com/example/javafxtutorial/nestPicture.jpg"}
