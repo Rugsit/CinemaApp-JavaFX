@@ -7,7 +7,7 @@
 - This project is created entirely in java language
 - Supports Responsive Design
 - Created to practice using java language and javafx.
-- ref: https://youtu.be/or8yeT8OOcg?si=aLu_BqehKBHe1_pd
+- Ui ref: https://youtu.be/or8yeT8OOcg?si=aLu_BqehKBHe1_pd
 
 ## Technologies
 
