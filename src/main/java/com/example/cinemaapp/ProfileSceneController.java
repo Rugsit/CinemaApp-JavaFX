@@ -198,7 +198,7 @@ public class ProfileSceneController {
             personalDataJsonObject.put("urlPicture", file.toURI().toURL().toExternalForm());
             personalDataString = personalDataJsonObject.toString();
             try {
-                FileWriter fileWriter = new FileWriter("PersonalData.json");
+                FileWriter fileWriter = new FileWriter(System.getProperty("user.dir")+ File.separator + "data" + File.separator + "PersonalData.json");
                 fileWriter.write(personalDataString);
                 fileWriter.close();
             }
