@@ -14,6 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Optional;
@@ -156,7 +157,7 @@ public class EditCustomerScene {
             ((AnchorPane) scene.getRoot()).setPrefWidth(rootPaneEdit.getWidth());
             profileSceneController.setCssFile(scene);
             try {
-                FileWriter fileWriter = new FileWriter("PersonalData.json");
+                FileWriter fileWriter = new FileWriter(System.getProperty("user.dir")+ File.separator + "data" + File.separator + "PersonalData.json");
                 fileWriter.write(ProfileSceneController.personalDataString);
                 fileWriter.close();
             }
