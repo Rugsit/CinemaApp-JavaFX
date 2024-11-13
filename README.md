@@ -13,10 +13,6 @@
 - Scene builder
 
 ## How to open project
-1. Download project from this repo
-2. Download javafx-sdk version 22.0.1 from https://gluonhq.com/products/javafx/
-3. Run CinemaApp.jar file in **CinemaApp-JavaFX/out/artifacts/CinemaApp_jar/CinemaApp.jar**
-    - on bash or cmd 
-   ```
-   java -jar --module-path /path/to/javafx-sdk-22.0.1/lib --add-modules javafx.controls,javafx.fxml /path/to/CinemaApp.jar
-   ```
+1. Download the project from the GitHub repository.
+2. After downloading, double-click the .jar file located inside the ```release``` folder to launch the application.
+3. Or you can click this link https://github.com/Rugsit/CinemaApp-JavaFX/releases/tag/1.0.0
